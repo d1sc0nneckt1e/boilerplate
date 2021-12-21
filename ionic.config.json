@@ -1,7 +1,0 @@
-{
-  "name": "boilerplate",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react"
-}
