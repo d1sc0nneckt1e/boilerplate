@@ -1,6 +1,6 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const dotenv = require('dotenv');
+const express = require("express");
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
 
 dotenv.config();
 
@@ -13,9 +13,9 @@ app.use(express.json());
 
 // connect to mongoDB
 mongoose.connect(process.env.MDB_CONNECT, (err) => {
-    if (err) return console.error(err);
-    console.log('Connect to MongoDB');
+  if (err) return console.error(err);
+  console.log("Connect to MongoDB");
 });
 
 // setup routes
-app.use('/auth', require('./routers/userRouter'));
+app.use("/auth", require("./routers/userRouter"));
